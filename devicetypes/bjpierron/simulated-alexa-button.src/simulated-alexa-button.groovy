@@ -12,7 +12,7 @@
  *
  */
 metadata {
-	definition (name: "Simulated Alexa Button", namespace: "bjpierron", author: "bjpierron") {
+	definition (name: "Simulated Alexa Button-Contact Relay", namespace: "bjpierron", author: "bjpierron") {
 		capability "Actuator"
 		capability "Switch"
 		capability "Momentary"
@@ -42,10 +42,10 @@ def parse(String description) {
 }
 
 def push() {
-	sendEvent(name: "switch", value: "on", isStateChange: true, display: false)
-	sendEvent(name: "switch", value: "off", isStateChange: true, display: false)	
+	sendEvent(name: "switch", value: "on", isStateChange: true, display: false)	
 	sendEvent(name: "contact", value: "open", isStateChange: true)	
 	sendEvent(name: "momentary", value: "pushed", isStateChange: true)
+	sendEvent(name: "switch", value: "off", isStateChange: true, display: false)
 }
 
 def on() {
