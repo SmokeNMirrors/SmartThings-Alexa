@@ -13,7 +13,7 @@
  */
 metadata {
 
-    definition (name: "Simulated Alexa Switch", namespace: "bjpierron", author: "bjpierron") {
+    definition (name: "Simulated Alexa Switch-Contact Relay", namespace: "bjpierron", author: "bjpierron") {
         capability "Switch"
         capability "Sensor"
         capability "Actuator"
